@@ -16,16 +16,27 @@ body {
 header {
     background-color: var(--primary-color);
     color: white;
-    text-align: center;
     padding: 1rem;
 }
 
-header img {
+.header-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Logo, title, nav */
+    align-items: center;
+}
+
+.logo {
     max-width: 150px; /* Adjust logo size */
 }
 
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
 nav {
-    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-end; /* Align navigation to the right */
 }
 
 nav a {
@@ -50,17 +61,7 @@ nav a:hover {
     height: auto;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-article {
+.hero article {
     position: absolute;
     bottom: 10%;
     left: 50%;
@@ -72,25 +73,50 @@ article {
     text-align: left;
 }
 
-article img {
+.hero article img {
     float: right;
     margin-left: 10px;
     border-radius: 50%; /* Circular image */
 }
 
-section {
+.history {
     margin: 2rem 0;
     padding: 0 1rem;
 }
 
-h2 {
+.history h2 {
     color: var(--primary-color);
     font-weight: 700;
 }
 
-section p {
+.history p {
     color: var(--text-color);
     line-height: 1.6; /* Improve readability */
+}
+
+.adventures {
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.adventures h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 1rem; /* Space between images */
+}
+
+figure {
+    margin: 0; /* Remove default margin */
+}
+
+figure img {
+    width: 100%; /* Responsive images */
+    border-radius: 8px; /* Rounded corners */
 }
 
 footer {
@@ -102,9 +128,14 @@ footer {
 
 .sociallinks {
     margin-top: 1rem;
+    display: flex;
+    justify-content: center; /* Center social links */
 }
 
-.sociallinks a img {
-    width: 24px; /* Size for social media icons */
+.sociallinks a {
     margin: 0 10px;
+}
+
+.sociallinks img {
+    width: 24px; /* Size for social media icons */
 }

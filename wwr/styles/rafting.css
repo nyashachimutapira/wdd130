@@ -1,53 +1,33 @@
-:root {
-    --primary-color: #007bff; /* Bright blue for accents */
-    --secondary-color: #6c757d; /* Grey for text */
-    --background-color: #f8f9fa; /* Light background */
-    --text-color: #343a40; /* Dark text for readability */
-    --hero-opacity: 0.8; /* Opacity for hero text background */
-}
-
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: var(--primary-color);
+    background-color: #1a55eb;
     color: white;
-    padding: 1rem;
-}
-
-.header-container {
-    display: grid;
-    grid-template-columns: auto 1fr auto; /* Logo, title, nav */
-    align-items: center;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .logo {
-    max-width: 150px; /* Adjust logo size */
+    width: 150px;
 }
 
-h1 {
-    text-align: center;
-    margin: 0;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end; /* Align navigation to the right */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-nav a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    margin: 0 1rem;
-    font-weight: 700;
-}
-
-nav a:hover {
-    text-decoration: underline; /* Underline on hover */
 }
 
 .hero {
@@ -56,86 +36,99 @@ nav a:hover {
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    max-height: 300px;
+    object-fit: cover;
 }
 
-.hero article {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, var(--hero-opacity));
+.contact-container {
     padding: 20px;
-    border-radius: 8px;
-    max-width: 300px; /* Set max width for article */
-    text-align: left;
 }
 
-.hero article img {
-    float: right;
-    margin-left: 10px;
-    border-radius: 50%; /* Circular image */
+.company-info {
+    margin-bottom: 20px;
 }
 
-.history {
-    margin: 2rem 0;
-    padding: 0 1rem;
+.company-info h2 {
+    margin-top: 0;
 }
 
-.history h2 {
-    color: var(--primary-color);
-    font-weight: 700;
+.employee-profiles {
+    margin-bottom: 20px;
 }
 
-.history p {
-    color: var(--text-color);
-    line-height: 1.6; /* Improve readability */
+.employee {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
 }
 
-.adventures {
-    margin: 2rem 0;
-    padding: 0 1rem;
+.employee img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
 }
 
-.adventures h2 {
-    color: var(--primary-color);
-    font-weight: 700;
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
 }
 
-.adventure-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 1rem; /* Space between images */
+.contact-form h2 {
+    margin-top: 0;
 }
 
-figure {
-    margin: 0; /* Remove default margin */
+.form-group {
+    margin-bottom: 15px;
 }
 
-figure img {
-    width: 100%; /* Responsive images */
-    border-radius: 8px; /* Rounded corners */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--secondary-color);
+    background-color: #333;
     color: white;
-}
-
-.sociallinks {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center; /* Center social links */
-}
-
-.sociallinks a {
-    margin: 0 10px;
+    text-align: center;
+    padding: 15px 0;
 }
 
 .sociallinks img {
-    width: 24px; /* Size for social media icons */
+    width: 30px;
+    margin: 0 10px;
+}
+
+.wireframe-link {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.wireframe-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .employee {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .employee img {
+        width: 80px;
+    }
 }

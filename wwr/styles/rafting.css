@@ -1,46 +1,60 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light background for contrast */
+    background-color: #f4f4f4;
+    /* Light background for contrast */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', sans-serif;
+}
+
+
+img {
+    width: 100%
+}
+
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Header Styles */
 header {
     background-color: #333;
-    color: white;
-    padding: 15px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
 }
 
-header .logo {
-    max-width: 150px; /* Responsive logo size */
+.logo {
+    width: 100%;
+    /* Responsive logo size */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+
 
 nav a {
     color: white;
     text-decoration: none;
+    padding: 1em;
 }
 
 nav a:hover {
-    text-decoration: underline; /* Underline on hover for better UX */
+    text-decoration: underline;
+    /* Underline on hover for better UX */
 }
 
 /* Main Content Styles */
-main {
-    padding: 20px;
-}
+
 
 /* Intro Section */
 .trips-intro {
@@ -49,12 +63,14 @@ main {
 }
 
 .trips-intro h1 {
-    font-size: 2.5em; /* Larger heading */
+    font-size: 2.5em;
+    /* Larger heading */
     margin-bottom: 10px;
 }
 
 .trips-intro p {
-    font-size: 1.2em; /* Slightly larger paragraph text */
+    font-size: 1.2em;
+    /* Slightly larger paragraph text */
 }
 
 /* Call to Action Button */
@@ -75,26 +91,40 @@ main {
 /* Trip Descriptions Section */
 .trip-descriptions {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
-    justify-content: center; /* Center items */
-    margin-bottom: 30px; /* Space below the section */
+    flex-wrap: wrap;
+    /* Allows items to wrap in smaller screens */
+    justify-content: center;
+    /* Center items */
+    margin-bottom: 30px;
+    /* Space below the section */
 }
 
 .trip {
-    background-color: white; /* White background for contrast */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 5px; /* Rounded corners */
-    width: 30%; /* Responsive width */
-    margin: 1.5%; /* Margin around each trip */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
-    text-align: center; /* Center content */
-    padding: 15px; /* Padding inside each trip */
+    background-color: white;
+    /* White background for contrast */
+    border: 1px solid #ccc;
+    /* Light border */
+    border-radius: 5px;
+    /* Rounded corners */
+    width: 30%;
+    /* Responsive width */
+    margin: 1.5%;
+    /* Margin around each trip */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    text-align: center;
+    /* Center content */
+    padding: 15px;
+    /* Padding inside each trip */
 }
 
 .trip img {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Rounded corners for images */
+    width: 100%;
+    /* Responsive image */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 5px;
+    /* Rounded corners for images */
 }
 
 /* Trips Table Section */
@@ -104,19 +134,26 @@ main {
 
 table {
     width: 100%;
-    border-collapse: collapse; /* Merge borders */
-    margin-top: 20px; /* Space above the table */
+    border-collapse: collapse;
+    /* Merge borders */
+    margin-top: 20px;
+    /* Space above the table */
 }
 
-th, td {
-    border: 1px solid #ccc; /* Light border for table */
+th,
+td {
+    border: 1px solid #ccc;
+    /* Light border for table */
     padding: 10px;
-    text-align: left; /* Align text to the left */
+    text-align: left;
+    /* Align text to the left */
 }
 
 th {
-    background-color: #007BFF; /* Header background */
-    color: white; /* Header text color */
+    background-color: #007BFF;
+    /* Header background */
+    color: white;
+    /* Header text color */
 }
 
 /* Footer Styles */
@@ -128,29 +165,36 @@ footer {
 }
 
 .sociallinks img {
-    width: 30px; /* Social icons size */
-    margin: 0 10px; /* Space between icons */
+    width: 30px;
+    /* Social icons size */
+    margin: 0 10px;
+    /* Space between icons */
 }
 
 .wireframe-link {
     color: white;
     text-decoration: none;
     display: block;
-    margin-top: 10px; /* Space above the link */
+    margin-top: 10px;
+    /* Space above the link */
 }
 
 .wireframe-link:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
+    /* Underline on hover */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .trip {
-        width: 100%; /* Full width on small screens */
-        margin: 10px 0; /* Margin adjusted for smaller screens */
+        width: 100%;
+        /* Full width on small screens */
+        margin: 10px 0;
+        /* Margin adjusted for smaller screens */
     }
 
     .trips-intro h1 {
-        font-size: 2em; /* Smaller heading on mobile */
+        font-size: 2em;
+        /* Smaller heading on mobile */
     }
 }

@@ -22,6 +22,7 @@ header nav {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 header a {
@@ -63,18 +64,36 @@ p {
 main img {
     width: 150px;
     height: auto;
-    display: block;
-    margin: 0 auto 1rem;
+    float: right;
+    margin: 0 0 1rem 1.5rem;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #3498db;
+    background-color: #ecf0f1;
+    color: #2c3e50;
 }
 
 aside {
     max-width: 800px;
-    margin: 0 auto 2rem;
-    padding: 1.5rem;
-    width: 90%;
-    border: 2px solid #3498db;
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 100%;
     border-radius: 8px;
+    position: relative;
+    clear: both;
+}
+
+aside.box {
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 2px solid #3498db;
     background-color: #ecf0f1;
     color: #2c3e50;
 }
@@ -85,6 +104,38 @@ aside img {
     display: block;
     margin: 0 auto 1rem;
     border-radius: 8px;
+}
+
+aside h2 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+    clear: both;
+}
+
+ul li {
+    margin-bottom: 0.75rem;
+    line-height: 1.8;
+}
+
+ul a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ul a:hover {
+    color: #3498db;
+    text-decoration: underline;
 }
 
 footer {

@@ -197,6 +197,50 @@ footer p {
   height: auto;
 }
 
+/* Home Page CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 48px 16px;
+  background-color: #f4f4f4;
+  margin-top: 40px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+  color: var(--accent1-color);
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 8px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-color);
+}
+
+.cta-button.secondary {
+  background-color: var(--accent1-color);
+}
+
+.cta-button.secondary:hover {
+  background-color: var(--primary-color);
+}
+
 /* Contact Us Page Styles (Wireframe Aligned) */
 .company-head {
   text-align: center;

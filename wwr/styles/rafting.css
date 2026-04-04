@@ -85,7 +85,7 @@ article {
   height: auto;
 }
 
-h1 {
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -248,7 +248,7 @@ footer p {
   padding: 20px;
 }
 
-.company-head h2 {
+.company-head h1 {
   margin-bottom: 16px;
   font-size: 2rem;
 }
@@ -404,12 +404,153 @@ button[type="submit"]:hover {
   justify-content: center;
 }
 
+/* Offerings Grid */
+.offerings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 40px 16px;
+}
+
+.offering {
+  background-color: #f4f4f4;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.offering img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 40px 16px;
+  text-align: center;
+  margin: 40px 16px;
+  border-radius: 8px;
+}
+
+.newsletter-section h2 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.newsletter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.newsletter-group label {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.newsletter-group input {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  min-width: 200px;
+}
+
+/* Trips Page Styles */
+.trips-cta {
+  text-align: center;
+  padding: 40px 16px;
+}
+
+.trips-cta h1 {
+  position: static;
+  background-color: transparent;
+  color: var(--primary-color);
+  opacity: 1;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 0 16px 40px;
+}
+
+.trip-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.trip-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.trip-card h2 {
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.trips-table-section {
+  margin: 40px 16px;
+}
+
+.trips-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.trips-table th,
+.trips-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.trips-table th {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.trips-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
 @media (max-width: 768px) {
-  .contact-grid {
+  .contact-grid,
+  .offerings-grid,
+  .trips-grid {
     grid-template-columns: 1fr;
   }
   
   .form-group {
     grid-template-columns: 1fr;
   }
-}
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+

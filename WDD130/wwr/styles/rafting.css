@@ -1,0 +1,198 @@
+:root {
+  --primary-color: #0c2a8a;
+  --secondary-color: #f4a261;
+  --accent1-color: #264653;
+  --accent2-color: #e9c46a;
+  --heading-font: "Times New Roman", "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  justify-self: start;
+}
+
+header nav {
+  justify-self: end;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+header nav a {
+  color: var(--accent2-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  text-align: center;
+}
+
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+article {
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 16px;
+}
+
+article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+/* History Section Styling */
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.history-content img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Adventures Section Styling */
+.adventures h2 {
+  margin-bottom: 24px;
+}
+
+.adventure-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.adventure-list figure {
+  margin: 0;
+  text-align: center;
+}
+
+.adventure-list img {
+  width: 100%;
+  height: 180px; /* Fixed height for image uniformity */
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.adventure-list img:hover {
+  transform: scale(1.05);
+}
+
+.adventure-list figcaption {
+  margin-top: 12px;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 24px 16px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socialmedia img {
+  width: 30px;
+  height: auto;
+}

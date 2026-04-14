@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+p {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    float: right;
+    margin: 0 0 1rem 1.5rem;
+    border: 2px solid #3498db;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #3498db;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 1rem;
+    border: 2px solid #3498db;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border-radius: 8px;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 8px;
+}
+
+aside h2 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+    clear: both;
+}
+
+ul li {
+    margin-bottom: 0.75rem;
+    line-height: 1.8;
+}
+
+ul a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ul a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-top: 3px solid #3498db;
+}
+
+footer p {
+    margin: 0;
+}

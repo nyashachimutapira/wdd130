@@ -87,6 +87,11 @@ main {
   margin-bottom: 2rem;
 }
 
+.home-hero {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
 .hero img {
   display: block;
   width: 100%;
@@ -127,7 +132,7 @@ main {
 .cta-button {
   display: inline-block;
   background-color: var(--secondary-color);
-  color: white;
+  color: #102a43;
   padding: 0.8rem 1.5rem;
   border-radius: 4px;
   text-decoration: none;
@@ -137,10 +142,12 @@ main {
 
 .cta-button:hover {
   background-color: var(--primary-color);
+  color: white;
 }
 
 .cta-button.secondary {
   background-color: var(--accent1-color);
+  color: white;
   margin-left: 1rem;
 }
 
